@@ -18,10 +18,6 @@
   --cover-image-dark: url(../images/cover-image-light.png);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
-
 .theme-light .header__dark_accent {
   display: none;
 }

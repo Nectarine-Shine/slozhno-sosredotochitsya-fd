@@ -1,13 +1,9 @@
 .header {
   height: 100vh;
   display: grid;
-  padding: 10px 0px;
-  margin-bottom: 40px; /*переопределить в медиа*/
+  margin-bottom: 40px;
   grid-template-rows: 1fr auto 1fr;
-}
-
-.header__theme-menu-button_active {
-  pointer-events: none;
+  padding: 10px;
 }
 
 .decorated-zone {
@@ -26,21 +22,21 @@
 
 .decorated-zone::before {
   top: 10px;
-  right: 0;
+  right: 10px;
   border-width: 0 0px 1px 1px;
   border-color: transparent transparent var(--accent-color) var(--accent-color);
   transform: rotate(180deg);
 }
 .decorated-zone::after {
   bottom: 10px;
-  left: 0;
+  left: 10px;
   border-width: 0px 0px 1px 1px;
   border-color: transparent transparent var(--accent-color) var(--accent-color);
 }
 
 .header__dark_accent {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 10px;
   font-family: "IBM Plex Mono";
   font-weight: 400;
@@ -93,6 +89,7 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--text-accent-color);
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -118,6 +115,10 @@
 
 .section:last-child {
   margin-bottom: 40px;
+}
+
+.section {
+  padding: 0px 10px;
 }
 
 .main__title {
@@ -189,7 +190,7 @@
 
 .footer {
   height: 100vh;
-  padding: 10px 0px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,18 +209,13 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 0px 10px;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .header {
     padding: 20px 0px;
     margin-bottom: 60px;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu {
@@ -229,6 +225,7 @@
   .header__title {
     grid-column: span 2;
     transform: translateX(-20px);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {
@@ -236,19 +233,26 @@
     grid-column-start: 2;
   }
 
-  .page {
+  .header {
+    padding: 20px;
+  }
+
+  .section {
     padding: 0px 20px;
   }
 
   .decorated-zone::before {
     top: 20px;
+    right: 20px;
   }
   .decorated-zone::after {
     bottom: 20px;
+    left: 20px;
   }
 
   .header__dark_accent {
     top: 20px;
+    right: 30px;
   }
 
   .text_wrapper {
@@ -323,9 +327,13 @@
     grid-column: 2/-1;
     grid-row: 3;
   }
+
+  .footer {
+    padding: 20px;
+  }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .header__theme-menu {
     justify-content: center;
     align-items: start;
