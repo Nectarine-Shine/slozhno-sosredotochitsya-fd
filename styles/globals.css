@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "IBM Plex Mono", sans-serif;
 }
 
 body {
@@ -39,4 +40,5 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  box-sizing: border-box;
 }
