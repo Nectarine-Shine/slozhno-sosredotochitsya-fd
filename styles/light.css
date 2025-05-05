@@ -16,6 +16,7 @@
   --subtitle-text-color: #353430;
   --outline-button-color: rgba(50, 49, 45, 0.4);
   --cover-image-dark: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
 }
 
 .theme-light .header__dark_accent {
@@ -31,6 +32,7 @@
     --subtitle-text-color: #353430;
     --outline-button-color: rgba(50, 49, 45, 0.4);
     --cover-image-dark: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
   }
 
   .header__dark_accent {

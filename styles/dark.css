@@ -12,6 +12,7 @@
   --subtitle-text-color: #000028;
   --outline-button-color: rgba(255, 0, 112, 0.4);
   --cover-image-dark: url(../images/cover-image-dark.png);
+  --background-color: #000028;
 }
 
 .theme-dark .header__dark_accent {
