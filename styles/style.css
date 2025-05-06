@@ -58,7 +58,7 @@
   margin-left: 10px;
   background: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--accent-color); /*Не понимаю, что не так с тенью, все брала из фигмы*/
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .header__theme-menu {
